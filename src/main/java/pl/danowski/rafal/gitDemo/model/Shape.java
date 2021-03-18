@@ -1,7 +1,10 @@
 package pl.danowski.rafal.gitDemo.model;
 
-public abstract class Shape {
-    protected Color color;
+import lombok.RequiredArgsConstructor;
 
-    protected abstract String draw();
+@RequiredArgsConstructor
+public abstract class Shape {
+    protected final Color color;
+
+    public abstract String draw();
 }
